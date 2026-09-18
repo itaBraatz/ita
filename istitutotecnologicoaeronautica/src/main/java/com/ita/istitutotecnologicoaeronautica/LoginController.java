@@ -15,13 +15,17 @@ public class LoginController {
     }
 
     @PostMapping("/login")
-    public String login(
-            @RequestParam("username") String username,
-            @RequestParam("password") String password) {
+public String login(
+        @RequestParam("username") String username,
+        @RequestParam("password") String password) {
 
-        System.out.println("Username: " + username);
-        System.out.println("Password: " + password);
+    System.out.println("Username: " + username);
+    System.out.println("Password: " + password);
 
-        return "login";
+    if (username.equals("admin") && password.equals("123")) {
+        return "inicio";
     }
+
+    return "login";
+}
 }
