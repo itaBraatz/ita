@@ -1,7 +1,16 @@
-body{
-    background-image: url("imagemITA.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+body#login-body {
+    background-color: black;
+    position: static;
+}
+.fundo-login {
+    z-index: -1;
+    position: static;
+    width: 100%;
+    filter: blur(2px);
+}
+h1#login-title {
+    color: white;
+    position: static;
+    top: 100px;
+    left: 600px;
 }
