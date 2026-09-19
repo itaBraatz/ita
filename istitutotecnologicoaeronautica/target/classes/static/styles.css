@@ -6,7 +6,7 @@
     position: absolute;
     top: -2%;
     left: -2%;
-    filter: blur(7px);
+    filter: blur(10px);
 }
 h1#login-title {
     color: white;
@@ -63,24 +63,76 @@ input#password {
     border-radius: 7px;
     border: none;
 }
-button#login-button {
+label#escolha-ano {
+    color: white;
+    text-shadow: 3px 3px 1.3px black;
+    font-size: 1.7rem;
     z-index: 0;
     position: absolute;
-    top: 45%;
+    top: 43%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+}
+select#year {
+    z-index: 0;
+    position: absolute;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 10vw;
-    height: 3.5vh;
+    width: 30vw;
+    height: 2.6vh;
     box-shadow: 4px 4px 2px black;
     border-radius: 7px;
     border: none;
 }
-
+label#escolha-materia {
+    color: white;
+    text-shadow: 3px 3px 1.3px black;
+    font-size: 1.7rem;
+    z-index: 0;
+    position: absolute;
+    top: 51%;
+    left: 37.6%;
+    transform: translate(-50%, -50%);
+}
+select#matter {
+    z-index: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    height: 2.6vh;
+    box-shadow: 4px 4px 2px black;
+    border-radius: 7px;
+    border: none;
+}
+button#login-button {
+    z-index: 0;
+    position: absolute;
+    cursor: pointer;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10vw;
+    height: 3.5vh;
+    border-radius: 7px;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    transition: .5s;
+}
+button#login-button:hover {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    box-shadow: 4px 4px 1.3px black;
+}
 /* 
-    CSS for the inicio page of the application.
+    CSS for the mathematics2026 page of the application.
 */
 
-.fundo-inicio {
+.fundo-mathematics2026 {
     z-index: -1;
     position: fixed;
     top: -2%;
@@ -89,7 +141,7 @@ button#login-button {
     height: 104%;
     filter: blur(10px);
 }
-h1#title-inicio {
+h1#title-mathematics2026 {
     color: white;
     z-index: 0;
     font-size: 3rem;
@@ -101,7 +153,7 @@ h1#title-inicio {
     transform: translate(-50%, -50%);
     text-shadow: 3px 3px 1.3px black;
 }
-h2#title-matematica {
+h2#title-mathematics2026 {
     color: white;
     z-index: 0;
     font-size: 2.5rem;
@@ -119,7 +171,7 @@ h2#title-matematica {
     color: black;
     font-size: 1.7rem;
     border-radius: 100%;
-    padding: 0.2rem 0.5rem;
+    padding: 0.3rem 0.2rem;
 }
 .titulo1 {
     z-index: 0;
@@ -139,7 +191,7 @@ h2#title-matematica {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: black;
+    background: black;
     border-radius: 7px;
 }
 .conteudo1 {
