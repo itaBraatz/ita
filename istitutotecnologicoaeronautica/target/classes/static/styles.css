@@ -172,12 +172,14 @@ h2#title-mathematics2026 {
     font-size: 1.7rem;
     border-radius: 100%;
     padding: 0.3rem 0.2rem;
+    transition: .5s;
 }
 .titulo1 {
     z-index: 0;
     color: white;
     font-size: 1.7rem;
     padding: 0.5rem 1rem;
+    transition: .5s;
 }
 #questao1 {
     z-index: 1;
@@ -191,8 +193,21 @@ h2#title-mathematics2026 {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: black;
-    border-radius: 7px;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    transition: .9s;
+}
+#questao1:hover {
+    backdrop-filter: blur(40px);
+    padding: 0.9rem 1.4rem;
+    width: 54vw;
+    .numero1 {
+        font-size: 2rem;
+    }
+    .titulo1 {
+        font-size: 2rem;
+    }
 }
 .conteudo1 {
     z-index: 0;
@@ -201,7 +216,8 @@ h2#title-mathematics2026 {
     left: 50%;
     width: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 7px;
-    background-color: white;
+    border-radius: 20px;
+    background: transparent;
+    backdrop-filter: blur(20px);
     font-size: 1.3rem;
 }
