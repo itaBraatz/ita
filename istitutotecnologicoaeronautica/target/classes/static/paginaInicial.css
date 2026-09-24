@@ -80,7 +80,7 @@ header::before {
     transform-origin: left;
     transform: scaleX(1);
 }
-.navegation .btnTest {
+.navegation .btnTest-Popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -94,7 +94,7 @@ header::before {
     margin-left: 40px;
     transition: .5s;
 }
-.navegation .btnTest:hover {
+.navegation .btnTest-Popup:hover {
     background: #fff;
     color: #162938;
 }
@@ -112,8 +112,11 @@ header::before {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    transform: scale(1);
+    transform: scale(0);
     transition: transform .5s ease, height .2s ease;
+}
+.wrapper.active-popup {
+    transform: scale(1);
 }
 .wrapper .icon-close {
     position: absolute;
@@ -129,9 +132,17 @@ header::before {
     align-items: center;
     border-bottom-left-radius: 20px;
     cursor: pointer;
-    z-index: 1;
+    z-index: 100;
 }
-.navegation-year .btn-2026 {
+.navigation-year {
+    display: flex;
+    flex-wrap: nowrap;       
+    overflow-x: auto;       
+    overflow-y: hidden;
+    white-space: nowrap;     
+    gap: 25px;
+}
+.navegation-year a {
     position: relative;
     font-size: 1.1em;
     color: #fff;
@@ -140,8 +151,10 @@ header::before {
     margin-left: 40px;
     background: transparent;
     border: none;
+    flex-shrink: 0;         /* impede os anos de serem espremidos */
+    white-space: nowrap;
 }
-.navegation-year .btn-2026::after {
+.navegation-year a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -154,7 +167,7 @@ header::before {
     transform: scaleX(0);
     transition: transform 0.5s;
 }
-.navegation-year .btn-2026:hover::after {
+.navegation-year a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
 }
