@@ -101,8 +101,8 @@ header::before {
 .wrapper {
     position: relative;
     color: #fff;
-    width: 1400px;
-    height: 800px;
+    width: 900px;
+    height: 700px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .7);
     border-radius: 20px;
@@ -114,4 +114,20 @@ header::before {
     overflow: hidden;
     transform: scale(1);
     transition: transform .5s ease, height .2s ease;
+}
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: black;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
 }
