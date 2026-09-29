@@ -151,7 +151,7 @@ header::before {
     margin-left: 40px;
     background: transparent;
     border: none;
-    flex-shrink: 0;         /* impede os anos de serem espremidos */
+    flex-shrink: 0;        
     white-space: nowrap;
 }
 .navegation-year a::after {
@@ -181,4 +181,39 @@ header#year {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+}
+#firstQuestion {
+    z-index: 1;
+    cursor: pointer;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: transparent;
+    border-radius: 20px;
+    transition: .9s;
+}
+#firstQuestion:hover{
+    transform-origin: left;
+    border: solid 0.5px white;
+    font-size: 1.3rem;
+}
+.firstContent {
+    color: white;
+    z-index: 1;
+    background: transparent;
+    font-size: 1.3rem;
+    padding: 1rem 1.5rem;
+    transition: .9s;
+}
+.firstContent:hover {
+    padding: 1.5rem 2rem;
+}
+.firstContent {
+    display: none;
+}
+.firstContent.mostrar {
+    display: block;
+}
+.primeiraQuestao {
+    cursor: pointer;
 }
