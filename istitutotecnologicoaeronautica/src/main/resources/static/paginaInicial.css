@@ -199,6 +199,7 @@ header#year {
 }
 .firstContent {
     color: white;
+    font-family: times;
     z-index: 1;
     background: transparent;
     font-size: 1.3rem;
